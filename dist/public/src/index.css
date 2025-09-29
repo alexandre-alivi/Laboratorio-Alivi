@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(342, 75%, 25%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Burgundy color palette */
+  --burgundy-50: hsl(342, 62%, 96%);
+  --burgundy-100: hsl(342, 62%, 92%);
+  --burgundy-500: hsl(342, 75%, 25%);
+  --burgundy-600: hsl(342, 75%, 22%);
+  --burgundy-700: hsl(342, 75%, 19%);
+  --burgundy-800: hsl(342, 75%, 16%);
+  --burgundy-900: hsl(342, 75%, 13%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(342, 75%, 25%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .burgundy-50 {
+    color: var(--burgundy-50);
+  }
+  .burgundy-100 {
+    color: var(--burgundy-100);
+  }
+  .burgundy-500 {
+    color: var(--burgundy-500);
+  }
+  .burgundy-600 {
+    color: var(--burgundy-600);
+  }
+  .burgundy-700 {
+    color: var(--burgundy-700);
+  }
+  .burgundy-800 {
+    color: var(--burgundy-800);
+  }
+  .burgundy-900 {
+    color: var(--burgundy-900);
+  }
+  
+  .bg-burgundy-50 {
+    background-color: var(--burgundy-50);
+  }
+  .bg-burgundy-100 {
+    background-color: var(--burgundy-100);
+  }
+  .bg-burgundy-500 {
+    background-color: var(--burgundy-500);
+  }
+  .bg-burgundy-600 {
+    background-color: var(--burgundy-600);
+  }
+  .bg-burgundy-700 {
+    background-color: var(--burgundy-700);
+  }
+  .bg-burgundy-800 {
+    background-color: var(--burgundy-800);
+  }
+  .bg-burgundy-900 {
+    background-color: var(--burgundy-900);
+  }
+  
+  .border-burgundy-500 {
+    border-color: var(--burgundy-500);
+  }
+  .border-burgundy-600 {
+    border-color: var(--burgundy-600);
+  }
+  
+  .text-burgundy-500 {
+    color: var(--burgundy-500);
+  }
+  .text-burgundy-600 {
+    color: var(--burgundy-600);
+  }
+  .text-burgundy-700 {
+    color: var(--burgundy-700);
+  }
+  .text-burgundy-800 {
+    color: var(--burgundy-800);
+  }
+  .text-burgundy-900 {
+    color: var(--burgundy-900);
+  }
+}
